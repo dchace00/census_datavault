@@ -10,12 +10,12 @@ profile: 'census_datavault'
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
 # found in the "models/" directory. You probably won't need to change these!
-model-paths: ["models", "models/refined", "models/report", "models/stage"]
-analysis-paths: ["analyses"]
-test-paths: ["tests"]
-seed-paths: ["seeds"]
-macro-paths: ["macros"]
-snapshot-paths: ["snapshots"]
+model-paths: ["census_dbt/models", "census_dbt/models/refined", "census_dbt/models/report", "census_dbt/models/stage"]
+analysis-paths: ["census_dbt/analyses"]
+test-paths: ["census_dbt/tests"]
+seed-paths: ["census_dbt/seeds"]
+macro-paths: ["census_dbt/macros"]
+snapshot-paths: ["census_dbt/snapshots"]
 
 clean-targets:         # directories to be removed by `dbt clean`
   - "target"
