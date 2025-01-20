@@ -1,0 +1,142 @@
+[0m09:43:42.446969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f704eb16370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f704c207f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f704c3cb9a0>]}
+
+
+============================== 09:43:42.449411 | f53504f1-e109-4c90-b5e5-536e525d6a0b ==============================
+[0m09:43:42.449411 [info ] [MainThread]: Running with dbt=1.8.7
+[0m09:43:42.449845 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/home/cetology/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt compile', 'send_anonymous_usage_stats': 'True'}
+[0m09:43:42.450203 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/cetology/census_datavault/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:43:42.451476 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_wall_clock_time": 0.052663054, "process_user_time": 0.828401, "process_kernel_time": 0.13031, "process_mem_max_rss": "79584", "process_in_blocks": "39944", "process_out_blocks": "8", "command_success": false}
+[0m09:43:42.451843 [debug] [MainThread]: Command `dbt compile` failed at 09:43:42.451757 after 0.05 seconds
+[0m09:43:42.452147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f704eb16370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f704c3cb9a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f704c207310>]}
+[0m09:43:42.452411 [debug] [MainThread]: Flushing usage events
+[0m09:44:26.727422 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf79ba0490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf77e7a160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf77292c10>]}
+
+
+============================== 09:44:26.729425 | c0e6030f-c2b1-4630-a558-aa45dc38b3e1 ==============================
+[0m09:44:26.729425 [info ] [MainThread]: Running with dbt=1.8.7
+[0m09:44:26.729827 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/cetology/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/cetology/census_datavault/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt compile', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:44:26.898496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c0e6030f-c2b1-4630-a558-aa45dc38b3e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf777f45e0>]}
+[0m09:44:26.940475 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c0e6030f-c2b1-4630-a558-aa45dc38b3e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf772925e0>]}
+[0m09:44:26.941924 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m09:44:26.953762 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m09:44:26.954417 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m09:44:26.954798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c0e6030f-c2b1-4630-a558-aa45dc38b3e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf757c9d60>]}
+[0m09:44:27.483047 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 14 unused configuration paths:
+- models.census_datavault.refined.hub_var
+- models.census_datavault.report.ratios
+- models.census_datavault.refined.link_year_geo_var
+- models.census_datavault.refined.sat_year_geo_var
+- models.census_datavault.report.central_measures
+- models.census_datavault.stage
+- models.census_datavault.report.pop_pyr
+- models.census_datavault.refined.hub_year
+- models.census_datavault.refined.hub_geo
+- models.census_datavault.refined.sat_geo
+- models.census_datavault.report
+- models.census_datavault.report.total_pop
+- models.census_datavault.refined.sat_var
+- models.census_datavault.refined
+[0m09:44:27.487027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c0e6030f-c2b1-4630-a558-aa45dc38b3e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf756c5610>]}
+[0m09:44:27.536033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c0e6030f-c2b1-4630-a558-aa45dc38b3e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf755aafa0>]}
+[0m09:44:27.536548 [info ] [MainThread]: Found 423 macros
+[0m09:44:27.536872 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c0e6030f-c2b1-4630-a558-aa45dc38b3e1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf756c5640>]}
+[0m09:44:27.538312 [info ] [MainThread]: 
+[0m09:44:27.538661 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m09:44:27.539069 [debug] [MainThread]: Command end result
+[0m09:44:27.556217 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 0.8679095, "process_user_time": 1.477427, "process_kernel_time": 0.040376, "process_mem_max_rss": "92948", "process_in_blocks": "12752", "process_out_blocks": "2408"}
+[0m09:44:27.556711 [debug] [MainThread]: Command `dbt compile` succeeded at 09:44:27.556612 after 0.87 seconds
+[0m09:44:27.557061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf79ba0490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf78831c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faf772aa790>]}
+[0m09:44:27.557400 [debug] [MainThread]: Flushing usage events
+[0m09:45:42.579114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdabbd784c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdab94575e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdab9457a00>]}
+
+
+============================== 09:45:42.581185 | ad9f72fb-0270-4702-9342-f43092d8225e ==============================
+[0m09:45:42.581185 [info ] [MainThread]: Running with dbt=1.8.7
+[0m09:45:42.581596 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/cetology/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt compile', 'send_anonymous_usage_stats': 'True'}
+[0m09:45:42.581970 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/cetology/census_datavault/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:45:42.582539 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_wall_clock_time": 0.042930737, "process_user_time": 0.816661, "process_kernel_time": 0.019918, "process_mem_max_rss": "79744", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m09:45:42.582876 [debug] [MainThread]: Command `dbt compile` failed at 09:45:42.582799 after 0.04 seconds
+[0m09:45:42.583155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdabbd784c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdab95ddd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdab94a4d60>]}
+[0m09:45:42.583418 [debug] [MainThread]: Flushing usage events
+[0m20:45:16.954118 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea16cea4c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea143d7700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea143d7550>]}
+
+
+============================== 20:45:16.956813 | 8655a6f6-f47e-4d76-a04f-8c49c7412ebc ==============================
+[0m20:45:16.956813 [info ] [MainThread]: Running with dbt=1.8.7
+[0m20:45:16.957213 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/home/cetology/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m20:45:16.972706 [info ] [MainThread]: dbt version: 1.8.7
+[0m20:45:16.973197 [info ] [MainThread]: python version: 3.8.10
+[0m20:45:16.973440 [info ] [MainThread]: python path: /home/cetology/venvs/census_datavault/bin/python3
+[0m20:45:16.973656 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.29
+[0m20:45:17.032624 [info ] [MainThread]: Using profiles dir at /home/cetology/.dbt
+[0m20:45:17.033035 [info ] [MainThread]: Using profiles.yml file at /home/cetology/.dbt/profiles.yml
+[0m20:45:17.033277 [info ] [MainThread]: Using dbt_project.yml file at /home/cetology/census_datavault/dbt_project.yml
+[0m20:45:17.034244 [info ] [MainThread]: adapter type: postgres
+[0m20:45:17.034527 [info ] [MainThread]: adapter version: 1.8.2
+[0m20:45:17.034774 [info ] [MainThread]: Configuration:
+[0m20:45:17.034977 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:45:17.035179 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m20:45:17.035390 [info ] [MainThread]: Required dependencies:
+[0m20:45:17.035600 [debug] [MainThread]: Executing "git --help"
+[0m20:45:17.039589 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:45:17.040116 [debug] [MainThread]: STDERR: "b''"
+[0m20:45:17.040345 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:45:17.040598 [info ] [MainThread]: Connection:
+[0m20:45:17.040845 [info ] [MainThread]:   host: localhost
+[0m20:45:17.041117 [info ] [MainThread]:   port: 5432
+[0m20:45:17.041313 [info ] [MainThread]:   user: postgres
+[0m20:45:17.041500 [info ] [MainThread]:   database: census_dbt_sandbox
+[0m20:45:17.041687 [info ] [MainThread]:   schema: stage
+[0m20:45:17.041889 [info ] [MainThread]:   connect_timeout: 10
+[0m20:45:17.042090 [info ] [MainThread]:   role: None
+[0m20:45:17.042277 [info ] [MainThread]:   search_path: None
+[0m20:45:17.042462 [info ] [MainThread]:   keepalives_idle: 0
+[0m20:45:17.042643 [info ] [MainThread]:   sslmode: None
+[0m20:45:17.042838 [info ] [MainThread]:   sslcert: None
+[0m20:45:17.043054 [info ] [MainThread]:   sslkey: None
+[0m20:45:17.043238 [info ] [MainThread]:   sslrootcert: None
+[0m20:45:17.043415 [info ] [MainThread]:   application_name: dbt
+[0m20:45:17.043591 [info ] [MainThread]:   retries: 1
+[0m20:45:17.044004 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m20:45:17.047686 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m20:45:17.070662 [debug] [MainThread]: Using postgres connection "debug"
+[0m20:45:17.071126 [debug] [MainThread]: On debug: select 1 as id
+[0m20:45:17.071350 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:45:17.098651 [debug] [MainThread]: SQL status: SELECT 1 in 0.027 seconds
+[0m20:45:17.099440 [debug] [MainThread]: On debug: Close
+[0m20:45:17.099832 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m20:45:17.100152 [info ] [MainThread]: [31m1 check failed:[0m
+[0m20:45:17.100415 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/cetology/census_datavault/dbt_project.yml> not found
+
+[0m20:45:17.101759 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.19100662, "process_user_time": 0.909833, "process_kernel_time": 0.084635, "process_mem_max_rss": "94756", "process_in_blocks": "51728", "process_out_blocks": "24", "command_success": false}
+[0m20:45:17.102100 [debug] [MainThread]: Command `dbt debug` failed at 20:45:17.102020 after 0.19 seconds
+[0m20:45:17.102358 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m20:45:17.102620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea16cea4c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea129bd2e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fea129bd700>]}
+[0m20:45:17.102913 [debug] [MainThread]: Flushing usage events
+[0m21:16:09.217837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbea6b684f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbea4253520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbea66dc8e0>]}
+
+
+============================== 21:16:09.220804 | 5afe4af8-56f8-4320-9ee7-d576d456158d ==============================
+[0m21:16:09.220804 [info ] [MainThread]: Running with dbt=1.8.7
+[0m21:16:09.221215 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/cetology/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt clean', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m21:16:09.221616 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/cetology/census_datavault/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m21:16:09.222165 [debug] [MainThread]: Resource report: {"command_name": "clean", "command_wall_clock_time": 0.04383668, "process_user_time": 0.777724, "process_kernel_time": 0.029912, "process_mem_max_rss": "79860", "process_in_blocks": "264", "process_out_blocks": "8", "command_success": false}
+[0m21:16:09.222471 [debug] [MainThread]: Command `dbt clean` failed at 21:16:09.222399 after 0.04 seconds
+[0m21:16:09.222694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbea6b684f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbea4273e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fbea4273fa0>]}
+[0m21:16:09.223025 [debug] [MainThread]: Flushing usage events
